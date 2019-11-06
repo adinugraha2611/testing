@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		.center{
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Prototype Arab To Braille Converter Indonesia</h1><br><br>
+<textarea id="arab" class="center" rows="7" cols="200" width="90%">ini text area untuk tulisan  arab</textarea> 
+<input id="convertButton" class="center" onclick="runIt()" type="button" value="Convert!">
+<div id="braille" class="center"  width="90%">Tekan tombol Convert untuk mengkonversi</div><br>
+	<p>Ini adalah model awal dari proyek individual yang diharapkan bisaterus dikmbangkan dan diaplikasikan untuk tujuan dan fungsi yang lebih besar. Hasil konversi tulisan arab telah mengikuti beberapa ketentuan yang lazim ditemukan pada penulisan Al-Quran Braille di Indonesia, diantaranya:<br>
+		<ul>
+			<li>huruf Lam Alif seperti لَا akan menjadi ⠧</li>
+			<li>Huruf hidup bertemu huruf mad dan sukun (opsional) akan ditulis tanpa harakan dan sukun.<br>
+				Contoh: حِيْ  akan menjadi ⠱⠊ 
+			</li>
+			<li>dan lain-lain.</li>
+		</ul><br>
+		Tentunya, proyek ini jauh dari sempurna. Masih ada sejumlah karakter yang belum terdata dan mungkin masih akan ditemui beberapa penulisan yang tidak sesuai kaidah yang benar. Namun, jika dinilai potensial, proyek ini akan terus dikembangkan bersama.
+	</p>
+</body>
+<script src="arToBraille.js"></script>
+<script src="jquery.js"></script>
+</html>
